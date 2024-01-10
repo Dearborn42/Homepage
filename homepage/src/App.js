@@ -1,5 +1,6 @@
 import Acordian from "./Components/Acordian";
 import MenuRender from "./Components/MenuRender"
+import Quotes from "./Components/Quotes";
 
 function App() {
   return (
@@ -7,6 +8,8 @@ function App() {
       <Acordian />
       <br />
       <MenuRender />
+      <br />
+      <Quotes />
     </div>
   );
 }
