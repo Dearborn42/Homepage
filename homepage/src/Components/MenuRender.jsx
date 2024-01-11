@@ -3,6 +3,7 @@ import Menu from './Menu';
 import Categories from './Categories';
 import items from "../Utils/menu.js"
 import '../Menu_Styles/main.css';
+import SearchBar from './SearchBar.jsx';
 
 const allCategories = ['All', ...new Set(items.map(x=>x.category))];
 
@@ -14,7 +15,7 @@ const MenuRender = () => {
     <main>
       <section className="section">
         <div className="title">
-          <h2>Our Menu</h2>
+          <h2><SearchBar /></h2>
           <div className="underline"></div>
         </div>
         <Categories categories={categories} filterItems={filterItem}/>
