@@ -5,9 +5,7 @@ const Menu = ({items}) => {
     <div className="menu">
         {items.map(x => {
             const {id, title, img, desc, price} = x;
-            return (
-                <Acordian />
-            )
+            return (<Acordian />)
         })}
     </div>
   )
