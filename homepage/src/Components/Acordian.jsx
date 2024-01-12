@@ -1,13 +1,13 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Question from './Question';
 import "../Acordian_Styles/main.css"
 
-const Acordian = ({data}) => {
+const Acordian = ({category, data}) => {
   return (
       <div className="container">
-        <h3>Questions and Answers about logins</h3>
+        <h3>{category}</h3>
         <section className='info'>
-          {data.map(x => (<Question key={x.id} {...x} />))}
+          {data.map(x => (<Question key={x.id} info={x}/>))}
         </section>
       </div>
   )

@@ -4,6 +4,7 @@ import Categories from './Categories';
 import items from "../Utils/menu.js"
 import '../Menu_Styles/main.css';
 import SearchBar from './SearchBar.jsx';
+import Quotes from './Quotes.jsx';
 
 const allCategories = ['All', ...new Set(items.map(x=>x.category))];
 
@@ -14,9 +15,12 @@ const MenuRender = () => {
   return (
     <main>
       <section className="section">
-        <div className="title">
-          <h2><SearchBar /></h2>
-          <div className="underline"></div>
+        <div className='backgroundImage'></div>
+        <div className='Quote'>
+          <div className="title">
+              <Quotes />
+              <SearchBar />
+          </div>
         </div>
         <Categories categories={categories} filterItems={filterItem}/>
         <Menu items={menuItems}/>

@@ -3,11 +3,7 @@ import Quotes from "./Components/Quotes";
 
 function App() {
   return (
-    <div className="App">
       <MenuRender />
-      <br />
-      <Quotes />
-    </div>
   );
 }
 

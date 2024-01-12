@@ -191,7 +191,7 @@ input[type=button] {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: #fbf5e9;
+  background: #4a6741;
   color: #29333d;
   line-height: 1.5;
   font-size: 0.875rem;
@@ -203,6 +203,40 @@ main {
   align-items: center;
   justify-content: center;
   align-items: flex-start;
+}
+
+.backgroundImage{
+  position: absolute;
+  height: 55vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-image: url(../Utils/forestMountain.jpg);
+  background-position: center center;
+  background-size: cover;
+  z-index: 0;
+  margin-bottom: 3rem;
+}
+
+.Search {
+  height: 100%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+.SearchBar {
+  height: 2.5rem;
+  width: 20rem;
+  margin-bottom: .25rem;
+  border: 2px solid #222;
+  border-right: .3px solid #222;
+}
+
+.SearchButton {
+  height: 2.5rem;
+  border:1.7px solid#222;
 }
 
 ul {
@@ -277,7 +311,7 @@ h4 {
   width: 90vw;
   margin: 5rem 0;
   max-width: 580px;
-  background: #eee;
+  background: #462e07;
   border-radius: 0.25rem;
   padding: 1.5rem 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -312,7 +346,49 @@ h4 {
 .title {
   text-align: center;
   margin-bottom: 2rem;
+    display: flex;
+      justify-content: center;
+      width: 80vw;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
 }
+.Quotes{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  z-index: 2;
+}
+.QuoteBox{
+  width: 90vw;
+  margin: 1rem 0;
+  max-width: 580px;
+  background: #eee;
+  border-radius: 0.25rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.refresh-button{
+    display: inline-block;
+    padding: 1rem 2rem;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border
+  }
 
 .btn-container {
   display: flex;

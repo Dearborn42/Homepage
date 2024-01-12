@@ -14,7 +14,7 @@ const Menu = ({items}) => {
 
   return (
     <div className="menu">
-        {sortedCategories.map(x => (<Acordian data={sorted[x]} />))}
+        {sortedCategories.map(x => (<Acordian category={x} data={sorted[x]} />))}
     </div>
   )
 }
