@@ -19,7 +19,7 @@ const MenuRender = () => {
           <div className="underline"></div>
         </div>
         <Categories categories={categories} filterItems={filterItem}/>
-        <Menu items={menuItems} />
+        <Menu items={menuItems}/>
       </section>
     </main>
   )
