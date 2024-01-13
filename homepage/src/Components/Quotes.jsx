@@ -3,22 +3,22 @@ import '../Quote_Styles/main.css';
 import QuoteBox from './QuoteBox';
 
 function Quotes() {
-  const [data, setData] = useState({"content": "Sup man", "author": "Sun Zu"});
+  const [data, setData] = useState(null);
   const [refreshFlag, setRefreshFlag] = useState(null);
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await fetch('https://api.quotable.io/random');
-  //       if (!response.ok) throw new Error('Network response was not ok');
-  //       const result = await response.json();
-  //       setRefreshFlag(false);
-  //       setData(result);
-  //     } catch (error) {
-  //       console.error('Error fetching data:', error);
-  //     }
-  //   };
-  //   fetchData();
-  // }, [refreshFlag]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://api.quotable.io/random');
+        if (!response.ok) throw new Error('Network response was not ok');
+        const result = await response.json();
+        setRefreshFlag(false);
+        setData(result);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    fetchData();
+  }, [refreshFlag]);
 
   const handleRefresh = async () => {
     setRefreshFlag(true);
