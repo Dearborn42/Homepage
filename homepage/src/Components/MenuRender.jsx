@@ -24,6 +24,7 @@ const MenuRender = () => {
         </div>
         <Categories categories={categories} filterItems={filterItem}/>
         <Menu items={menuItems}/>
+        <iframe style={{borderRadius: `12px`}} src="https://open.spotify.com/embed/playlist/0p68nRIH0Bw9UlHFJdU44s?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </section>
     </main>
   )
