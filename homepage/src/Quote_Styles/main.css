@@ -435,8 +435,8 @@ iframe{
   position: fixed;
   right: 0;
   bottom: 0;
-  width: 35%;
-  height:35%;
+  width: 35vw;
+  height:35vh;
 }
 
 .menu {
@@ -480,7 +480,7 @@ iframe{
   color: #668099;
   font-size: 1.05rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .menu .menu-item {
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
@@ -488,6 +488,11 @@ iframe{
   }
   .menu .photo {
     height: 175px;
+  }
+  iframe{
+    position: relative;
+    width: 70vw;
+    height: 40vh;
   }
 }
 @media only screen and (min-width: 1280px) {
