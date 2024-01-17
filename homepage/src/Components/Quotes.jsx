@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../Quote_Styles/main.css';
 import QuoteBox from './QuoteBox';
 
-function Quotes() {
+function Quotes({pipePlay}) {
   const [data, setData] = useState(null);
   const [refreshFlag, setRefreshFlag] = useState(null);
   useEffect(() => {
@@ -21,6 +21,7 @@ function Quotes() {
   }, [refreshFlag]);
 
   const handleRefresh = async () => {
+    pipePlay();
     setRefreshFlag(true);
   };
   return (
